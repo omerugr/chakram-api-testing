@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "a6160586-1455-4b73-9bae-507c4afe0a65",
+		"name": "PetStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33874868"
+	},
+	"item": [
+		{
+			"name": "UserCreate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 891486468741,\n  \"username\": \"mauroicardi34\",\n  \"firstName\": \"mauro\",\n  \"lastName\": \"icardi\",\n  \"email\": \"mauroicardi34@gmail.com\",\n  \"password\": \"gs1905\",\n  \"phone\": \"1981564816118\",\n  \"userStatus\": 0\n}"
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUser",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/mauroicardi34",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"mauroicardi34"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserUpdate",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 891486468741,\n    \"username\": \"mauroicardi3434\",\n    \"firstName\": \"mauro\",\n    \"lastName\": \"icardi\",\n    \"email\": \"mauroicardi34@gmail.com\",\n    \"password\": \"gs1905\",\n    \"phone\": \"1981564816118\",\n    \"userStatus\": 0\n}"
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/mauroicardi34",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"mauroicardi34"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserDelete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/mauroicardi3434",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"mauroicardi3434"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
