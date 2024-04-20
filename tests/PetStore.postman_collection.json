@@ -42,6 +42,9 @@
 		},
 		{
 			"name": "GetUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [
@@ -50,6 +53,15 @@
 						"value": "application/json"
 					}
 				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "https://petstore.swagger.io/v2/user/mauroicardi34",
 					"protocol": "https",
@@ -124,6 +136,70 @@
 						"v2",
 						"user",
 						"mauroicardi3434"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetLogin",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/login?username=mauro34&password=gs1905",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "mauro34"
+						},
+						{
+							"key": "password",
+							"value": "gs1905"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetLogout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/logout",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"logout"
 					]
 				}
 			},

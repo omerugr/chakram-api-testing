@@ -9,6 +9,19 @@ describe("User Tests", function () {
         return chakram.wait();
     });
 
+
+    it("GET /v2/user/logout", function () {
+        const response = chakram.get("https://petstore.swagger.io/v2/user/logout");
+        expect(response).to.have.status(200);
+        return chakram.wait();
+    });
+
+
+    it("GET /v2/user/login", function () {
+        const response = chakram.get("https://petstore.swagger.io/v2/user/login?username=test&password=gs1905");
+        expect(response).to.have.status(200);
+        return chakram.wait();
+    });
     
 
     it("POST /v2/user userCreate", function () {
@@ -32,7 +45,7 @@ describe("User Tests", function () {
         const response = chakram.post("https://petstore.swagger.io/v2/user", data);
         
         return response.then(function (res){
-            // console.log(res.body);
+            
             expect(res).to.have.status(200);
             expect(res).to.have.json(resData);
         })
